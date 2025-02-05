@@ -17,7 +17,7 @@ runner = CrawlerRunner(settings={
 @defer.inlineCallbacks
 def run_spiders():
     # Spustí prvního spidera
-    yield runner.crawl(TipcarsSpider)
+    #yield runner.crawl(TipcarsSpider)
     # Spustí druhého spidera po dokončení prvního
     yield runner.crawl(CarDetailsSpider)
     # Ukončí reactor po dokončení druhého spidera

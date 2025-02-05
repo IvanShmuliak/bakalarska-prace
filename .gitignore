@@ -1,0 +1,25 @@
+.venv/bin
+
+# Virtuální prostředí
+.venv/
+venv/
+env/
+
+# Soubory generované Pythonem
+__pycache__/
+*.py[cod]
+
+# Logy a ladící výstupy
+logs/
+*.log
+debug.log
+nohup.out
+
+# Konfigurace a citlivé soubory
+.env
+config.yaml
+secrets.json
+
+# Ignore JetBrains (PyCharm) settings
+.idea/
+*.iml
