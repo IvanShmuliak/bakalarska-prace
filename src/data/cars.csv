@@ -525,3 +525,33 @@ BMW i5,XDRIVE40,1 833 934 Kč,4/2024,27058km,neuvedeno,290 kW / 394 PS,neuvedeno
 BMW i5,xDrive40 Touring,2 023 873 Kč,2024,neuvedeno,neuvedeno,290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,bílá
 BMW i5,"xDrive40 Touring, Ihned",1 799 500 Kč,2024,neuvedeno,12/2027,290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,tmavě šedá metalíza
 BMW i5,eDrive40 Sedan,1 639 000 Kč,2024,5km,neuvedeno,250 kW / 340 PS,neuvedeno,elektro,neuvedeno,sedan,4 dveře,5 míst,černá metalíza
+BMW i5,xDrive40 Sedan,1 700 000 Kč,6/2024,1km,neuvedeno,"[<Selector query='//span[@class=""detail-info__row__state__text""]/text()' data='\n                             Předvád...'>]",250 kW / 340 PS,1 cm³,elektro,aut. převodovka,sedan,5 dveří,5 míst,bílá
+BMW i5,M60 xDrive,2 099 000 Kč,2023,36000km,neuvedeno,"[<Selector query='//span[@class=""detail-info__row__state__text""]/text()' data='\n                             Perfekt...'>]",neuvedeno,neuvedeno,elektro,neuvedeno,sedan,4 dveře,5 míst,šedá metalíza
+BMW i5,eDrive40 Sedan,1 640 000 Kč,2/2024,1km,neuvedeno,"[<Selector query='//span[@class=""detail-info__row__state__text""]/text()' data='\n                             Nové vo...'>]",250 kW / 340 PS,1 cm³,elektro,aut. převodovka,sedan,4 dveře,5 míst,bílá
+BMW i5,M60 xDrive Sedan,1 610 000 Kč,8/2023,25000km,11/2027,"[<Selector query='//span[@class=""detail-info__row__state__text""]/text()' data='\n                             Předvád...'>]",442 kW / 601 PS,1 cm³,elektro,aut. převodovka,sedan,4 dveře,5 míst,bílá
+BMW i5,eDrive40 Sedan,1 777 000 Kč,2024,25000km,2/2028,"[<Selector query='//span[@class=""detail-info__row__state__text""]/text()' data='\n                             Perfekt...'>]",250 kW / 340 PS,neuvedeno,elektro,neuvedeno,sedan,4 dveře,5 míst,červená
+BMW i5,eDrive40 Touring,1 599 000 Kč,5/2024,15000km,5/2028,"[<Selector query='//span[@class=""detail-info__row__state__text""]/text()' data='\n                             Perfekt...'>]",250 kW / 340 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,bílá metalíza
+BMW i5,XDRIVE40,1 833 934 Kč,4/2024,27058km,neuvedeno,"[<Selector query='//span[@class=""detail-info__row__state__text""]/text()' data='\n                             neuvede...'>]",290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,sedan,4 dveře,5 míst,černá metalíza
+BMW i5,xDrive40 Touring,2 023 873 Kč,2024,neuvedeno,neuvedeno,"[<Selector query='//span[@class=""detail-info__row__state__text""]/text()' data='\n                             Nové vo...'>]",290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,bílá
+BMW i5,"xDrive40 Touring, Ihned",1 799 500 Kč,2024,neuvedeno,12/2027,"[<Selector query='//span[@class=""detail-info__row__state__text""]/text()' data='\n                             Nové vo...'>]",290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,tmavě šedá metalíza
+BMW i5,eDrive40 Sedan,1 639 000 Kč,2024,5km,neuvedeno,"[<Selector query='//span[@class=""detail-info__row__state__text""]/text()' data='\n                             Nové vo...'>]",250 kW / 340 PS,neuvedeno,elektro,neuvedeno,sedan,4 dveře,5 míst,černá metalíza
+BMW i5,xDrive40 Sedan,1 700 000 Kč,6/2024,1km,neuvedeno,Předváděcí vozidlo,250 kW / 340 PS,1 cm³,elektro,aut. převodovka,sedan,5 dveří,5 míst,bílá
+BMW i5,M60 xDrive,2 099 000 Kč,2023,36000km,neuvedeno,Perfektní,neuvedeno,neuvedeno,elektro,neuvedeno,sedan,4 dveře,5 míst,šedá metalíza
+BMW i5,eDrive40 Sedan,1 640 000 Kč,2/2024,1km,neuvedeno,Nové vozidlo,250 kW / 340 PS,1 cm³,elektro,aut. převodovka,sedan,4 dveře,5 míst,bílá
+BMW i5,M60 xDrive Sedan,1 610 000 Kč,8/2023,25000km,11/2027,Předváděcí vozidlo,442 kW / 601 PS,1 cm³,elektro,aut. převodovka,sedan,4 dveře,5 míst,bílá
+BMW i5,eDrive40 Sedan,1 777 000 Kč,2024,25000km,2/2028,Perfektní,250 kW / 340 PS,neuvedeno,elektro,neuvedeno,sedan,4 dveře,5 míst,červená
+BMW i5,eDrive40 Touring,1 599 000 Kč,5/2024,15000km,5/2028,Perfektní,250 kW / 340 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,bílá metalíza
+BMW i5,XDRIVE40,1 833 934 Kč,4/2024,27058km,neuvedeno,neuvedeno,290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,sedan,4 dveře,5 míst,černá metalíza
+BMW i5,xDrive40 Touring,2 023 873 Kč,2024,neuvedeno,neuvedeno,Nové vozidlo,290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,bílá
+BMW i5,"xDrive40 Touring, Ihned",1 799 500 Kč,2024,neuvedeno,12/2027,Nové vozidlo,290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,tmavě šedá metalíza
+BMW i5,eDrive40 Sedan,1 639 000 Kč,2024,5km,neuvedeno,Nové vozidlo,250 kW / 340 PS,neuvedeno,elektro,neuvedeno,sedan,4 dveře,5 míst,černá metalíza
+BMW i5,xDrive40 Sedan,1 700 000 Kč,6/2024,1km,neuvedeno,Předváděcí vozidlo,250 kW / 340 PS,1 cm³,elektro,aut. převodovka,sedan,5 dveří,5 míst,bílá
+BMW i5,M60 xDrive,2 099 000 Kč,2023,36000km,neuvedeno,Perfektní,neuvedeno,neuvedeno,elektro,neuvedeno,sedan,4 dveře,5 míst,šedá metalíza
+BMW i5,eDrive40 Sedan,1 640 000 Kč,2/2024,1km,neuvedeno,Nové vozidlo,250 kW / 340 PS,1 cm³,elektro,aut. převodovka,sedan,4 dveře,5 míst,bílá
+BMW i5,M60 xDrive Sedan,1 610 000 Kč,8/2023,25000km,11/2027,Předváděcí vozidlo,442 kW / 601 PS,1 cm³,elektro,aut. převodovka,sedan,4 dveře,5 míst,bílá
+BMW i5,eDrive40 Sedan,1 777 000 Kč,2024,25000km,2/2028,Perfektní,250 kW / 340 PS,neuvedeno,elektro,neuvedeno,sedan,4 dveře,5 míst,červená
+BMW i5,eDrive40 Touring,1 599 000 Kč,5/2024,15000km,5/2028,Perfektní,250 kW / 340 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,bílá metalíza
+BMW i5,XDRIVE40,1 833 934 Kč,4/2024,27058km,neuvedeno,neuvedeno,290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,sedan,4 dveře,5 míst,černá metalíza
+BMW i5,xDrive40 Touring,2 023 873 Kč,2024,neuvedeno,neuvedeno,Nové vozidlo,290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,bílá
+BMW i5,"xDrive40 Touring, Ihned",1 799 500 Kč,2024,neuvedeno,12/2027,Nové vozidlo,290 kW / 394 PS,neuvedeno,elektro,aut. převodovka,kombi,5 dveří,5 míst,tmavě šedá metalíza
+BMW i5,eDrive40 Sedan,1 639 000 Kč,2024,5km,neuvedeno,Nové vozidlo,250 kW / 340 PS,neuvedeno,elektro,neuvedeno,sedan,4 dveře,5 míst,černá metalíza
