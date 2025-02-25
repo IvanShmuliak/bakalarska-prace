@@ -1,13 +1,15 @@
 import scrapy
 import csv
 import re
+import pandas as pd
+import os
 
 class CarDetailsSpider(scrapy.Spider):
     name = "car_details"
 
     def start_requests(self):
         # Načtení URL odkazů z csv souboru
-        with open("data/car_urls.csv", "r") as f:
+        with open("../data/raw_data/car_urls.csv", "r") as f:
             reader = csv.reader(f)
             for row in reader:
                 url = row[0]  # Extract the URL from the first column
@@ -30,11 +32,12 @@ class CarDetailsSpider(scrapy.Spider):
         pocet_dveri = response.xpath('//div[@class="detail-info__col"][2]/div[2]/div[1]/div[2]/text()').getall()
         pocet_mist = response.xpath('//div[@class="detail-info__col"][2]/div[2]/div[1]/div[3]/text()').getall()
         barva_exterieru = response.xpath('//div[@class="detail-info__col"][2]/div[2]/div[1]/div[4]/text()').getall()
-
+        adresa_prodejce = response.xpath('//section[@class="text-M"]/text()').getall()
+        nazev_prodejce = response.xpath('//section[@class="text-L-bold"]/text()').get()
 
         # Čištění získaných řetězců
         model_auta = re.sub(r'\s+', ' ', model_auta).strip()
-        verze_modelu = re.sub(r'\s+', ' ', verze_modelu).strip()
+        verze_modelu = re.sub(r'\s+', ' ', verze_modelu.strip()) if verze_modelu else "N/A"
         #Cena zůstává beze změny
         datum_registrace = ' '.join(datum_registrace).strip().replace(' ', '')
         najezd = ' '.join(najezd).strip().replace(' ', '')
@@ -48,10 +51,33 @@ class CarDetailsSpider(scrapy.Spider):
         pocet_dveri = re.sub(r"\s+", " ", " ".join(pocet_dveri).strip())
         pocet_mist = re.sub(r"\s+", " ", " ".join(pocet_mist).strip())
         barva_exterieru = re.sub(r"\s+", " ", " ".join(barva_exterieru).strip())
+        adresa_prodejce = re.sub(r'\s+', ' ', " ".join(adresa_prodejce).strip()) if adresa_prodejce else "N/A"
+        nazev_prodejce = re.sub(r'\s+', ' ', nazev_prodejce).strip() if nazev_prodejce else "N/A"
+
+        #Vytvoření DataFrame
+        df = pd.DataFrame([{
+            "Model Auta": model_auta,
+            "Verze modelu": verze_modelu,
+            "Cena": cena,
+            "Datum registrace": datum_registrace,
+            "Najezd": najezd,
+            "Stk": stk,
+            "Stav": stav,
+            "Vykon": vykon,
+            "Objem motoru": objem_motoru,
+            "Typ paliva": typ_paliva,
+            "Typ prevodovky": typ_prevodovky,
+            "Typ karoserie": typ_karoserie,
+            "Pocet dveri": pocet_dveri,
+            "Pocet mist": pocet_mist,
+            "Barva exterieru": barva_exterieru,
+            "Adresa prodejce": adresa_prodejce,
+            "Nazev prodejce": nazev_prodejce
+        }])
+
+        #Nastavení cesty pro csv soubor
+        csv_path = "../data/raw_data/cars.csv"
 
         # Uložení dat do csv souboru
-        with open("data/cars.csv", "a", newline="") as f:
-            writer = csv.writer(f)
-            writer.writerow([model_auta, verze_modelu, cena, datum_registrace, najezd, stk, stav, vykon,
-                             objem_motoru, typ_paliva, typ_prevodovky, typ_karoserie, pocet_dveri, pocet_mist,
-                             barva_exterieru])
+        file_exists = os.path.isfile(csv_path)
+        df.to_csv(csv_path, mode="a", header=not file_exists, index=False)

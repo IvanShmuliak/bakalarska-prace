@@ -1,8 +1,8 @@
 from twisted.internet import reactor, defer
 from scrapy.crawler import CrawlerRunner
 from scrapy.utils.log import configure_logging
-from src.spiders.tipcar_urls import TipcarsSpider
-from src.spiders.car_details import CarDetailsSpider
+from scraper.spiders.car_details import CarDetailsSpider
+from scraper.spiders.tipcar_urls import TipcarsSpider
 
 # Nastavení logování
 configure_logging()

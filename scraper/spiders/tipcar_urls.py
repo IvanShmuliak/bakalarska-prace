@@ -3,7 +3,7 @@ import csv
 
 class TipcarsSpider(scrapy.Spider):
     name = "tipcars_urls"
-    start_urls = ["https://www.tipcars.com/bmw?str=1-20/"]
+    start_urls = ["https://www.tipcars.com/bmw-rada-6?str=1-20/"]
 
     car_urls = []  # Proměnná na úrovni třídy pro ukládání URL odkazů na inzeraty
 
@@ -29,7 +29,7 @@ class TipcarsSpider(scrapy.Spider):
 
             # Zápis URL odkazů do csv
             try:
-                with open("data/car_urls.csv", "a", newline="") as f:
+                with open("../data/raw_data/car_urls.csv", "a", newline="") as f:
                     writer = csv.writer(f)
                     for url in self.car_urls:
                         writer.writerow([url])
@@ -39,7 +39,7 @@ class TipcarsSpider(scrapy.Spider):
 
             # Generate the next page URL
             next_page = current_page + 1
-            next_page_url = f"https://www.tipcars.com/bmw?str={next_page}-20"
+            next_page_url = f"https://www.tipcars.com/bmw-rada-6?str={next_page}-20"
             yield scrapy.Request(next_page_url, callback=self.parse)
         else:
             self.logger.info("Žádné další odkazy, scraping ukončen.")
